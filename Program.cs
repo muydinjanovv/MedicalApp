@@ -5,6 +5,8 @@ using Microsoft.EntityFrameworkCore;
 using Medical.Entity;
 using Microsoft.AspNetCore.Identity;
 using Medical;
+using Medical.Hubs;
+using Microsoft.AspNetCore.ResponseCompression;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +16,12 @@ builder.Services.AddServerSideBlazor();
 builder.Services.AddDbContext<AppDbContext>(options => 
 { 
     options.UseSqlServer(builder.Configuration.GetConnectionString("HealthConnection")); 
-}); 
+});
+
+builder.Services.AddResponseCompression(options =>
+{
+    options.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(new[] { "application/octet-stream" });
+});
  
 builder.Services.AddIdentity<User, IdentityRole>(options => 
 { 
@@ -35,6 +42,8 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.Cookie.MaxAge = TimeSpan.FromDays(7); 
 });
 builder.Services.AddHostedService<Seed>();
+
+
 var app = builder.Build();
 
 
@@ -53,6 +62,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.MapBlazorHub();
+app.MapHub<ChatHub>("/chathub");
 app.MapFallbackToPage("/_Host");
 
 app.Run();
