@@ -111,6 +111,39 @@
         }
       },
       {
+        "HashCode": -1812298183,
+        "Kind": "Components.Component",
+        "Name": "Medical.App",
+        "AssemblyName": "Medical",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Medical.App"
+        }
+      },
+      {
+        "HashCode": 915562481,
+        "Kind": "Components.Component",
+        "Name": "Medical.App",
+        "AssemblyName": "Medical",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Medical.App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Medical.App",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 1788666266,
         "Kind": "Components.Component",
         "Name": "Medical.Shared.SurveyPrompt",
@@ -256,39 +289,6 @@
           "Runtime.Name": "Components.None",
           "Common.TypeName": "Medical.Shared.MainLayout.Body",
           "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1812298183,
-        "Kind": "Components.Component",
-        "Name": "Medical.App",
-        "AssemblyName": "Medical",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Medical.App"
-        }
-      },
-      {
-        "HashCode": 915562481,
-        "Kind": "Components.Component",
-        "Name": "Medical.App",
-        "AssemblyName": "Medical",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Medical.App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Medical.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
