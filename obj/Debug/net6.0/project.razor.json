@@ -45,6 +45,39 @@
         }
       },
       {
+        "HashCode": -2138727788,
+        "Kind": "Components.Component",
+        "Name": "Medical.Pages.Register",
+        "AssemblyName": "Medical",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Register"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Medical.Pages.Register"
+        }
+      },
+      {
+        "HashCode": 1309958017,
+        "Kind": "Components.Component",
+        "Name": "Medical.Pages.Register",
+        "AssemblyName": "Medical",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Medical.Pages.Register"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Medical.Pages.Register",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 193916084,
         "Kind": "Components.Component",
         "Name": "Medical.Pages.Index",
@@ -16548,6 +16581,11 @@
     {
       "FilePath": "c:\\Users\\Muhammadjon\\Medical\\Pages\\Index.razor",
       "TargetPath": "Pages\\Index.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Muhammadjon\\Medical\\Pages\\Register.razor",
+      "TargetPath": "Pages\\Register.razor",
       "FileKind": "component"
     },
     {
